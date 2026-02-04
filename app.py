@@ -293,7 +293,7 @@ def page_quiz():
         if hasattr(st.session_state, 'use_default') and st.session_state.use_default:
             # Gunakan dataset default dari uploads
             try:
-                gejala, rules, strategi = load_dataset("/mnt/user-data/uploads/dataset_sistem_pakar_vark.csv")
+                gejala, rules, strategi = load_dataset("dataset_sistem_pakar_vark.csv")
                 st.session_state.gejala_list = gejala
                 st.session_state.rules_list = rules
                 st.session_state.strategi_map = strategi
